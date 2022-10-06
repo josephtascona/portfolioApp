@@ -9,7 +9,7 @@ router.get('/', function(req, res, next) {
 
 module.exports = router;
 
-function main(from, subject, text) {
+function main(email, subject, message) {
   // nodemailer transporter
   var transporter = nodemailer.createTransport({
     port: 465,               // true for 465, false for other ports
@@ -25,11 +25,11 @@ function main(from, subject, text) {
     from: process.env.EMAIL,
     to: process.env.EMAIL,
     subject: subject,
-    text: "From: " + from + "\nMessage: \n" + text,
+    text: "From: " + email + "\nMessage: \n" + message,
   });
 }
 
 router.post("/", function (req, res, next) {
-  main(req.body.from, req.body.subject, req.body.text);
+  main(req.body.email, req.body.subject, req.body.message);
   res.render('index', { title: 'Portfolio' });
 })
