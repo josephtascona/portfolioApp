@@ -224,3 +224,150 @@ input[type=submit]:hover {
 .apple {
   color: white;
 }
+
+@media (min-width: 320px) {
+  .navbar ul {
+    padding-left: 0px;
+  }
+
+  .navbar a {
+    margin: 0px 10px;
+  }
+
+  .main {
+    height: 577px;
+  }
+
+  .content {
+    padding-top: 150px;
+    width: 75%;
+    font-size: 13px;
+  }
+
+  .about {
+    height: 620px;
+  }
+
+  .project-button {
+    display: flex;
+    width: 100%;
+    margin: 15px 0px;
+  }
+
+  .projects {
+    height: 1700px;
+  }
+
+  .contact .content {
+    width: 70%;
+    padding-top: 50px;
+  }
+
+  .contact {
+    height: 540px;
+  }
+}
+
+@media (min-width: 375px) {
+  .main {
+    height: 578px;
+  }
+}
+
+@media (min-width: 768px) {
+  .content {
+    font-size: 16px;
+    width: 60%;
+  }
+
+  .project-button {
+    display: inline-block;
+    width: 23%;
+    margin: 1px 2px;
+  }
+
+  .projects>.img>.content {
+    width: 70%;
+  }
+
+  .projects .content h1 {
+    margin-bottom: 50px;
+  }
+
+  .projects {
+    height: 622px;
+  }
+
+  .contact .content {
+    width: 50%;
+  }
+
+  .navbar a {
+    margin: 0px 40px;
+  }
+
+  .about {
+    height: 622px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .contact .content {
+    width: 35%;
+  }
+
+  .main {
+    height: 784px;
+  }
+
+  .about {
+    height: 835px;
+  }
+
+  .content {
+    padding-top: 250px;
+    margin: auto;
+  }
+
+  .projects {
+    height: 835px;
+  }
+
+  .contact {
+    height: 741px;
+  }
+
+  .contact .content {
+    padding-top: 150px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .contact .content {
+    width: 25%;
+  }
+
+  .main {
+    height: 843px;
+  }
+
+  .about {
+    height: 894px;
+  }
+
+  .projects {
+    height: 894px;
+  }
+
+  .contact {
+    height: 801px;
+  }
+
+  .main > .img > h1 {
+    padding-top: 400px;
+  }
+
+  .content {
+    padding-top: 350px;
+  }
+}
